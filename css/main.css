@@ -10,6 +10,7 @@
     --primary-white-color: #ffffff;
     --black-text-color: #000000;
     --back-color: #F5F4FA;
+    --icon-color: #AFB1B8;
 }
 p,
 h1,
@@ -337,10 +338,32 @@ body {
     line-height: 1.9;
 }
 
+
 .social-list {
+    display: flex;
+    margin: 0 32px 30px;
+    border-radius: 50%;
+}
+
+.social-link {
     display: flex;
     align-items: center;
     justify-content: center;
+    line-height: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    fill: var(--icon-color);
+}
+
+.social-link:hover,
+.social-link:focus {
+    fill: var(--primary-white-color);
+    background-color: var(--accent-text-color);
+    cursor: pointer;
+}
+.social-item:not(:last-child) {
+    margin-right: 10px;
 }
 /* features */
 
@@ -360,6 +383,33 @@ body {
     line-height: 1.7;
 }
 
+
+/*Regular customers*/
+
+.companys {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.companys-link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    fill: var(--icon-color);
+}
+.companys-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.companys-link:hover,
+.companys-link:focus {
+    border-color: var(--accent-text-color);
+    fill: var(--accent-text-color)
+}
 /* footer */
 footer {
     background: #2F303A;
@@ -371,7 +421,7 @@ footer {
     line-height: 1.71; 
 }
 
-.container.foot {
+.container-foot {
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -392,6 +442,38 @@ footer .info {
 .city {
     margin-bottom: 9px;
 }
+
+.join-foot {
+    display: flex;
+    align-items: baseline;
+}
+.title {
+    margin-bottom: 20px;
+    color: var(--primary-white-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.join {
+    display: block;
+    margin-left: 70px;
+}
+.social-list.join {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.social-link.con {
+    fill: var(--primary-white-color);
+    background: rgba(255, 255, 255, 0.1);
+}
+.social-link.con:hover,
+.social-link.con:focus {
+    background-color: var(--accent-text-color)
+}
+
 /* спрятать заголовок */
 /*.hiden {
     position: absolute;
