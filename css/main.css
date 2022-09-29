@@ -400,6 +400,8 @@ body {
 
 .companys-link {
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 170px;
     height: 92px;
     padding: 16px 32px;
