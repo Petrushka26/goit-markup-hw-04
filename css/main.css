@@ -91,6 +91,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid #ECECEC;
 
 }
 .site-nav .link:hover,
@@ -109,6 +110,9 @@ body {
     display: flex;
 }
 .auth-nav .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -250,11 +254,13 @@ body {
 }
 
 .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 120px;
     background-color: #F5F4FA;
     border-radius: 4px;
     margin-bottom: 30px;
-    padding: 25px 102px;
 }
 
 /* section*/
@@ -454,8 +460,12 @@ footer .info {
     color: rgba(255, 255, 255, 0.6);
     letter-spacing: 0.03em;
 }
-
-.city {
+.info:hover,
+.info:focus {
+    color: var(--accent-text-color);
+}
+.info-item:first-child {
+    margin-top: 9px;
     margin-bottom: 9px;
 }
 
